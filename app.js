@@ -1,7 +1,6 @@
 async function loadBooks() {
   try {
-    //https://sheetdb.io/api/v1/o2poecvxm98m7
-    const res = await fetch('data-buku.json');
+    const res = await fetch('https://sheetdb.io/api/v1/o2poecvxm98m7');
     const books = await res.json();
     render(books);
 
